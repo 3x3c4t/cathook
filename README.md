@@ -91,13 +91,13 @@ Cathook automatically detects the file and uploads it.
 Type:
 
 ```text
-exit
+/exit
 ```
 
 or
 
 ```text
-quit
+/quit
 ```
 
 ## Project Structure
