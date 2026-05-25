@@ -9,19 +9,28 @@ Cathook is a lightweight terminal-based tool that allows sending text messages o
 - Send text messages to a webhook
 - Upload files automatically
 - Automatic file detection
+- Drag and drop file support
 - Minimal terminal interface
-- Cross-platform support
 - Simple installation
 - Lightweight and fast
 
 ## Requirements
 
+- Windows
 - Python 3.8+
 - requests
 
+## Platform Support
+
+Cathook is designed for **Windows only**.
+
+It uses Windows-dependent behavior and was intentionally kept Windows-only because cross-platform support was not implemented.
+
+If you want to run it on another platform, you will need to use the executable version through compatibility tools such as Wine.
+
 ## Installation
 
-### Automatic (Windows)
+### Automatic
 
 Run:
 
@@ -65,21 +74,17 @@ Type any text and press Enter.
 hello
 ```
 
-### Send a file
+### Upload a file
 
-Enter a valid file path.
+You can upload a file by simply dragging and dropping it into the command prompt window, then pressing Enter.
+
+You can also paste the file path manually:
 
 ```text
 C:\Users\User\Desktop\image.png
 ```
 
-or
-
-```text
-"/home/user/file.txt"
-```
-
-Cathook automatically uploads the file.
+Cathook automatically detects the file and uploads it.
 
 ### Exit
 
@@ -124,8 +129,8 @@ If an operation fails:
 ## Notes
 
 - Invalid file paths are treated as text
-- Works on Windows, Linux, and macOS
 - Requires an active internet connection
+- Windows command prompt recommended
 
 ## License
 
